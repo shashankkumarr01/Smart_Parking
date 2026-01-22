@@ -1,0 +1,48 @@
+@@ -0,0 +1,47 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: #f4f6f8;
+}
+
+.parking-lot {
+  display: grid;
+  grid-template-columns: repeat(3, 150px);
+  gap: 20px;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.slot {
+  height: 120px;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  padding-top: 20px;
+  position: relative;
+}
+
+.green-bg {
+  background-color: #2ecc71;
+}
+
+.red-bg {
+  background-color: #e74c3c;
+}
+
+.yellow-bg {
+  background-color: #f1c40f;
+  color: black;
+}
+
+.reserve-btn {
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+  right: 20px;
+  padding: 6px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: none;
+}
