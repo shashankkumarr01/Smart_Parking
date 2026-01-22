@@ -1,0 +1,34 @@
+@@ -0,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Smart Parking Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <h1>🚗 Smart Parking System</h1>
+
+  <!-- Parking Grid -->
+  <div class="parking-lot">
+    <div id="slot-1" class="slot green-bg">
+      Slot 1
+      <button class="reserve-btn" onclick="reserveSlot('slot-1')">Reserve</button>
+    </div>
+
+    <div id="slot-2" class="slot green-bg">
+      Slot 2
+      <button class="reserve-btn" onclick="reserveSlot('slot-2')">Reserve</button>
+    </div>
+
+    <div id="slot-3" class="slot green-bg">
+      Slot 3
+      <button class="reserve-btn" onclick="reserveSlot('slot-3')">Reserve</button>
+    </div>
+  </div>
+
+  <!-- Firebase Logic -->
+  <script type="module" src="app.js"></script>
+</body>
+</html>
