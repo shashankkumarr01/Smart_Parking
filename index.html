@@ -40,11 +40,16 @@
   const firebaseConfig = {
     apiKey: "AIzaSyAED0-MNaKPVxJSDke2ZuDvIRkcnq9WgLM",
     authDomain: "circuitcoders-parking.firebaseapp.com",
+    databaseURL: "https://circuitcoders-parking-default-rtdb.firebaseio.com",
     projectId: "circuitcoders-parking",
     storageBucket: "circuitcoders-parking.firebasestorage.app",
     messagingSenderId: "504132377809",
-    appId: "1:504132377809:web:1425c151ab8ed4cc9739f0"
+    appId: "1:504132377809:web:16a3b7b9602e48f29739f0"
   };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+</script>
 
   // Initialize Firebase
   const app = initializeApp(firebaseConfig);
