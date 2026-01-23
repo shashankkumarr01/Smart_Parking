@@ -20,7 +20,9 @@
     <div id="slot-2" class="slot green-bg">
       Slot 2
       <button class="reserve-btn" onclick="reserveSlot('slot-2')">Reserve</button>
-    </div>
+    </div><div class="parking-lot" id="parkingLot"></div>
+
+<script type="module" src="app.js"></script>
 
     <div id="slot-3" class="slot green-bg">
       Slot 3
@@ -30,24 +32,5 @@
 
   <!-- Firebase Logic -->
   <script type="module" src="app.js"></script>
-  <script type="module">
-  // Import the functions you need from the SDKs you need
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.8.0/firebase-app.js";
-  // TODO: Add SDKs for Firebase products that you want to use
-  // https://firebase.google.com/docs/web/setup#available-libraries
-
-  // Your web app's Firebase configuration
-  const firebaseConfig = {
-    apiKey: "AIzaSyAED0-MNaKPVxJSDke2ZuDvIRkcnq9WgLM",
-    authDomain: "circuitcoders-parking.firebaseapp.com",
-    projectId: "circuitcoders-parking",
-    storageBucket: "circuitcoders-parking.firebasestorage.app",
-    messagingSenderId: "504132377809",
-    appId: "1:504132377809:web:1425c151ab8ed4cc9739f0"
-  };
-
-  // Initialize Firebase
-  const app = initializeApp(firebaseConfig);
-</script>
 </body>
 </html>

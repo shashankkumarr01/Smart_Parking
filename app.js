@@ -31,6 +31,20 @@ const userRole = "Staff"; // Change to "User" to test
     const button = slotDiv.querySelector(".reserve-btn");
 
     slotDiv.classList.remove("green-bg", "red-bg", "yellow-bg");
+const totalSlots = 30; // Change this to ANY number
+const parkingLot = document.getElementById("parkingLot");
+
+// Create slots dynamically
+for (let i = 1; i <= totalSlots; i++) {
+  const slotDiv = document.createElement("div");
+  slotDiv.id = `slot-${i}`;
+  slotDiv.className = "slot green-bg";
+  slotDiv.innerHTML = `
+    Slot ${i}
+    <button class="reserve-btn" onclick="reserveSlot('slot-${i}')">Reserve</button>
+  `;
+  parkingLot.appendChild(slotDiv);
+}
 
     if (data.status === "filled") {
       slotDiv.classList.add("red-bg");
